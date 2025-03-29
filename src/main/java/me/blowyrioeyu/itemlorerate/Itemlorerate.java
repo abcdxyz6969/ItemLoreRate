@@ -1,17 +1,22 @@
 package me.blowyrioeyu.itemlorerate;
 
+import me.blowyrioeyu.itemlorerate.commands.AddLoreCommand;
+import me.blowyrioeyu.itemlorerate.events.InventoryListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class Itemlorerate extends JavaPlugin {
+public class itemlorerate extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        getCommand("addlore").setExecutor(new AddLoreCommand());
 
+        getServer().getPluginManager().registerEvents(new InventoryListener(), this);
+
+        getLogger().info("ItemLoreRate plugin đã được kích hoạt! (Developed by blowyrioeyu)");
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        getLogger().info("ItemLoreRate plugin đã bị tắt!");
     }
 }

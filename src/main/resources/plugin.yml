@@ -1,4 +1,8 @@
-name: itemlorerate
-version: '1.0-SNAPSHOT'
-main: me.blowyrioeyu.itemlorerate.Itemlorerate
-api-version: '1.20'
+name: ItemLoreRate
+version: 1.0
+main: me.blowyrioeyu.itemlorerate.itemlorerate
+author: blowyrioeyu
+commands:
+  addlore:
+    description: Thêm lore vào item đang cầm
+    usage: /addlore <COMMON|UNCOMMON|RARE|EPIC|LEGENDARY>
