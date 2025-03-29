@@ -1,0 +1,4 @@
+name: itemlorerate
+version: '1.0-SNAPSHOT'
+main: me.blowyrioeyu.itemlorerate.Itemlorerate
+api-version: '1.20'
